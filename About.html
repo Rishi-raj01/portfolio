@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+        }
+
+        .left {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.8rem;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(30, 30, 30);
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.04rem;
+        }
+
+        .about-section {
+            margin: 80px auto;
+            /* Center the element horizontally with top margin */
+            padding: 40px;
+            text-align: left;
+            background: linear-gradient(to right, #1e1e1e, #222);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+            max-width: 600px;
+            width: 90%;
+            /* Adjusted width for responsiveness */
+            overflow: hidden;
+        }
+
+        .about-section:hover {
+            background: linear-gradient(to right, #1e1e1e, #35274a);
+            transition: background 0.5s ease-in-out;
+        }
+
+        .about-section h2 {
+            color: rgba(195, 43, 226, 0.73);
+            margin-bottom: 20px;
+            font-size: 32px;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .about-section:hover h2 {
+            color: #fff;
+        }
+
+        .about-section p {
+            color: #b3b3b3;
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .highlight-text {
+            color: rgba(195, 43, 226, 0.73);
+            font-weight: bold;
+        }
+
+        .about-section img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 10px;
+            margin-top: 20px;
+            transition: transform 0.5s ease-in-out;
+        }
+
+        .about-section:hover img {
+            transform: scale(1.05);
+        }
+
+        /* Media Queries for Responsiveness */
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .about-section {
+                width: 90%;
+                /* Adjusted width for smaller screens */
+                margin: 80px auto;
+                /* Center the element horizontally with top margin */
+                padding: 20px;
+                /* Adjusted padding for smaller screens */
+            }
+
+            nav {
+                justify-content: space-between;
+                /* Align items to the ends for better spacing */
+            }
+
+            .left {
+                font-size: 1.5rem;
+                /* Adjust font size for smaller screens */
+                margin-left: 20px;
+                /* Add left margin for space from the border */
+            }
+
+            nav ul {
+                margin-right: 20px;
+                /* Add right margin for space from the border */
+            }
+
+            nav ul li {
+                margin: 0 10px;
+                /* Adjust margin for better spacing between nav items */
+            }
+
+            .right ul {
+                margin-right: 20px;
+                /* Add right margin for space from the border */
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="about-section">
+        <h2>About Me</h2>
+        <p>
+            Hello there! I'm a passionate and curious individual taking my first steps in the dynamic world of Computer
+            Science. Eager to collaborate with fellow enthusiasts, I'm excited to contribute my energy and learn from
+            the wealth of experiences that others bring to the table.
+        </p>
+        <p>
+            My journey in the field of Computer Science has just begun, and I'm embracing every opportunity to expand my
+            knowledge and skill set. As a fervent self-learner, I'm always up for a challenge, seeking out unique
+            projects that ignite my creativity and push the boundaries of my understanding.
+        </p>
+        <!-- Add an image that represents you or your interests -->
+        <img src="about.png" alt="About Me Image">

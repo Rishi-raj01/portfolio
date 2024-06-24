@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishi-Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(30, 30, 30);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.8rem;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 90px 0;
+        }
+
+        .first>div {
+            width: 30%;
+        }
+
+        .rightsection img {
+            width: 90%;
+        }
+
+        .leftsection {
+
+            font-size: 1.7rem;
+        }
+
+        .purple {
+            font-style: italic;
+            color: rgba(195, 43, 226, 0.73);
+        }
+
+        #element {
+            color: rgba(195, 43, 226, 0.73);
+            font-style: italic;
+        }
+
+        .second {
+            font-size: 1.5rem;
+            max-width: 80vw;
+            margin: auto;
+            height: 80vh;
+
+        }
+
+        /* main hr{
+            background: rgba(195, 43, 226, 0.73);
+            border: 0;
+            height: 1.2px;
+            margin: 40px 84px;
+            border-top: 1px dashed;
+        } */
+        .greytext {
+            color: gray;
+        }
+
+        .second .horizontalLine {
+            background: rgba(195, 43, 226, 0.73);
+            width: 74vw;
+            height: 2px;
+            margin: 56px 0;
+            display: flex;
+        }
+
+        .second .vertical {
+            height: 93px;
+            width: 1px;
+            background-color: rgba(195, 43, 226, 0.73);
+            margin: 0 140px;
+        }
+
+
+
+        .verticalText {
+            position: relative;
+            top: 50px;
+            width: 150px;
+            margin-top: 40px;
+        }
+
+        .vertical-desc {
+            position: relative;
+            top: 100px;
+            color: grey;
+            width: 200px;
+            font-size: 15px;
+        }
+
+        .vertical-desc1 {
+            margin-top: 35px;
+            position: relative;
+            top: 100px;
+            color: grey;
+            width: 200px;
+            font-size: 15px;
+        }
+
+        .footer {
+            display: flex;
+            margin-top: 200px;
+            background-color: rgb(34, 32, 32);
+            height: 233px;
+            padding: 23px 122px;
+            justify-content: space-evenly;
+        }
+
+        .footer>div {
+            width: 223px;
+        }
+
+        .footer ul li {
+            list-style: none;
+            
+        }
+        footer ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .footer-third a{
+            text-decoration: none;
+            color: azure;
+        }
+        .text-center{
+            text-align: center;
+            margin-top: -30px;
+            color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="first">
+            <div class="leftsection"> Hello, my name is <span class="purple"> Rishi Raj</span>
+                <div>and I am a passionate</div>
+                <div>computer science enthusiast</div>
+                <div>And I'm Familiar With</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightsection"> <img src="developer.png" alt=""></div>
+
+        </section>
+        <!-- <hr  > -->
+        <section class="second">
+            <span class="greytext"> What I have done during this Student Journey</span>
+            <br>
+            <h1>Work Experience</h1>
+            <br>
+            <div class="horizontalLine">
+                <div class="vertical">
+
+                    <div class="verticalText"> Personal Project </div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li>E-Commerce website</li>
+                            <li>spotify clone</li>
+                            <li>Netflix frontend clone</li>
+
+                        </ul>
+                    </div>
+                </div>
+                <!-- <div class="vertical">
+
+                    <div class="verticalText"> Internship</div>
+                    <div class="vertical-desc1">
+                        <p> Internship in Passion 3D World.</p>
+                        <p> role : Research and Development Intern </p>
+                        <p>I contributed to groundbreaking projects</p>
+                    </div>
+                </div> -->
+                <div class="vertical">
+
+                    <div class="verticalText"> Skills</div>
+                    <div class="vertical-desc">
+                        <ul>
+                            <li> Web-Development </li>
+                            <li>MERN stack</li>
+                            <li>mySQL</li>
+                            <li>DSA</li>
+                            <li> Python </li>
+                            <li>Html,Css</li>
+                            <li>C++</li>
+                            <li>Javascript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="vertical">
+
+                    <div class="verticalText"> Academic Performance </div>
+                    <div class="vertical-desc">
+                        <p>I have performed well in all the Semesters</p>
+                        <p>Overall CGPA till Semister VI is 7.06 
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-first">
+                <h3>Rishi Raj's Portfolio</h3>
+            </div>
+            <div class="footer-second">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+            <div class="footer-third">
+                Social Media:
+                <ul>
+                    <li><i class="fab fa-github"></i> <a href="https://github.com/Rishi-raj01">GitHub</a></li>
+                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rishi-raj-a92416278">LinkedIn</a></li>
+                    <li><i class="far fa-envelope"></i> <a href="mailto:rishirajnvr448@gmail.com">Email</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="text-center">www.rishiportfolio.com | <i class="fas fa-copyright"></i> All rights reserved</div>
+        
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web-Development ','Data Structure and Analysis', 'MERN stack', 'HTML-CSS', 'javascript','mySQL','Python' ],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
