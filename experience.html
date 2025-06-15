@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects</title>
+    <style>
+        * {
+            margin: 0%;
+            padding: 0;
+        }
+
+        body {
+            background-color: black;
+            color: aliceblue;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 40px;
+            background-color: rgb(30, 30, 30);
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-grow: 1;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: aliceblue;
+        }
+
+        nav ul li a:hover {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.04rem;
+        }
+
+        .left {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.8rem;
+        }
+
+        .right ul {
+            display: flex;
+            list-style: none;
+        }
+
+        .right ul li {
+            margin: 0 20px;
+        }
+
+        .right ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1rem;
+            transition: color 0.3s ease-in-out;
+        }
+
+        .right ul li a:hover {
+            color: rgba(195, 43, 226, 0.73);
+        }
+
+        .projects-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+            justify-content: center;
+            max-width: 1000px;
+            margin: 200px auto;
+        }
+
+        .project-card {
+            padding: 20px;
+            background: linear-gradient(to right, #1e1e1e, #222);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(55, 55, 55, 0.5);
+            overflow: hidden;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            font-size: 1.4rem;
+        }
+
+        .project-title {
+            color: rgba(195, 43, 226, 0.73);
+            font-size: 1.5rem;
+            margin-bottom: 10px;
+        }
+
+        .project-description {
+            color: #b3b3b3;
+            font-size: 16px;
+        }
+
+        /* Link color inside project descriptions */
+        .project-description a {
+            color: #c361ff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .project-description a:hover {
+            color: #e19eff;
+            text-decoration: underline;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .projects-section {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .project-card {
+                margin-bottom: 20px;
+            }
+
+            nav {
+                justify-content: space-between;
+            }
+
+            .left {
+                font-size: 1.5rem;
+                margin-left: 20px;
+            }
+
+            nav ul {
+                margin-right: 20px;
+            }
+
+            nav ul li {
+                margin: 0 10px;
+            }
+
+            .right ul {
+                margin-right: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left">
+                My Portfolio
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div class="projects-section">
+        <!-- Internship -->
+        <div class="project-card">
+            <div class="project-title">Software Developer Intern – TopZo (SGLG Technologies)</div>
+            <div class="project-description">
+                <ul>
+                    <li>Duration: May 2024 – July 2024 (Remote)</li>
+                    <li>Integrated image upload and automatic menu parsing features, reducing partner onboarding time by 40%.</li>
+                    <li>Developed a collaborative filtering-based recommendation engine to display frequently co-purchased products, increasing user engagement by 25%.</li>
+                    <li>Enhanced search functionality by implementing auto-complete and keyword matching, improving item discovery speed by 20%.</li>
+                    <li>Worked on optimizing frontend and backend modules, contributing to smoother user interactions and system scalability.</li>
+                    <li>Collaborated closely with cross-functional teams in an Agile environment to deliver production-ready features.</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Freelancer Experience -->
+        <div class="project-card">
+            <div class="project-title">Freelancer – Web Developer</div>
+            <div class="project-description">
+                <ul>
+                    <li>Designed and deployed multiple client websites to meet branding and functional needs.</li>
+                    <li><strong><a href="https://ritwin.shop" target="_blank">Ritwin Handmade Gift</a></strong> – E-commerce site built with MERN Stack</li>
+                    <li><strong><a href="https://srl-academy.vercel.app/" target="_blank">SRL Academy</a></strong> – Education portal with responsive design</li>
+                    <li><strong><a href="https://hfe-sable.vercel.app/" target="_blank">High Flight Edu</a></strong> – Coaching platform with course showcase</li>
+                    <li><strong><a href="https://aimbiologyclasses.in/" target="_blank">Aim Biology Classes</a></strong> – Fully functional tutoring institute site</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
