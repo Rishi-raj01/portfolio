@@ -1,297 +1,349 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rishi-Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <style>
-        * {
-            margin: 0%;
-            padding: 0;
-        }
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
-        body {
-            background-color: black;
-            color: aliceblue;
-            font-family: 'Poppins', sans-serif;
-        }
+    body {
+      background-color: black;
+      color: aliceblue;
+       font-family: 'Poppins', sans-serif;
+    }
 
-        nav {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            height: 40px;
-            background-color: rgb(30, 30, 30);
-        }
+    nav {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 50px;
+      background-color: rgb(30, 30, 30);
+    }
 
-        nav ul {
-            display: flex;
-            justify-content: center;
-        }
+    nav ul {
+      display: flex;
+    }
 
-        nav ul li {
-            list-style: none;
-            margin: 0 23px;
-        }
+    nav ul li {
+      list-style: none;
+      margin: 0 20px;
+    }
 
-        nav ul li a {
-            text-decoration: none;
-            color: aliceblue;
-        }
+    nav ul li a {
+      text-decoration: none;
+      color: #cc6dd5;
+    }
 
-        nav ul li a:hover {
-            color: rgba(195, 43, 226, 0.73);
-            font-size: 1.04rem;
-        }
+    nav ul li a:hover {
+      color: #ff00ff;
+    }
 
-        .left {
-            color: rgba(195, 43, 226, 0.73);
-            font-size: 1.8rem;
-        }
+    .left {
+      color: rgba(195, 43, 226, 0.73);
+      font-size: 1.8rem;
+    }
 
-        .first {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            margin: 90px 0;
-        }
+    .first {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      flex-wrap: wrap;
+      margin: 80px 0;
+      padding: 0 20px;
+    }
 
-        .first>div {
-            width: 30%;
-        }
+    .leftsection {
+      font-size: 1.7rem;
+      width: 40%;
+      min-width: 280px;
+    }
 
-        .rightsection img {
-            width: 90%;
-        }
+    .rightsection img {
+      width: 90%;
+      max-width: 400px;
+    }
 
-        .leftsection {
+    .purple, #element {
+      color: rgba(195, 43, 226, 0.73);
+      font-style: italic;
+    }
 
-            font-size: 1.7rem;
-        }
+    .second {
+      font-size: 1.5rem;
+      max-width: 90vw;
+      margin: auto;
+      padding-bottom: 100px;
+    }
 
-        .purple {
-            font-style: italic;
-            color: rgba(195, 43, 226, 0.73);
-        }
+    .greytext {
+      color: gray;
+    }
 
-        #element {
-            color: rgba(195, 43, 226, 0.73);
-            font-style: italic;
-        }
+    .second h1 {
+      margin-top: 10px;
+    }
 
-        .second {
-            font-size: 1.5rem;
-            max-width: 80vw;
-            margin: auto;
-            height: 80vh;
+    .horizontalLine {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 50px;
+      gap: 50px;
+    }
 
-        }
+    .vertical {
+     background-color: transparent;
+      padding: 20px;
+      border-radius: 10px;
+      width: 260px;
+      min-height: 300px;
+        font-style: italic;
+    }
 
-        /* main hr{
-            background: rgba(195, 43, 226, 0.73);
-            border: 0;
-            height: 1.2px;
-            margin: 40px 84px;
-            border-top: 1px dashed;
-        } */
-        .greytext {
-            color: gray;
-        }
+    .verticalText {
+      font-size: 1.2rem;
+      font-weight: bold;
+      margin-bottom: 15px;
+      color: rgb(201, 86, 209);
+      font-family: 'Poppins', sans-serif;
+    }
 
-        .second .horizontalLine {
-            background: rgba(195, 43, 226, 0.73);
-            width: 74vw;
-            height: 2px;
-            margin: 56px 0;
-            display: flex;
-        }
+    .vertical-desc, .vertical-desc1 {
+      color: lightgray;
+      font-size: 15px;
+    }
 
-        .second .vertical {
-            height: 93px;
-            width: 1px;
-            background-color: rgba(195, 43, 226, 0.73);
-            margin: 0 140px;
-        }
+    .vertical ul {
+      padding-left: 20px;
+    }
 
+    .vertical ul li a {
+      color: #a853b9;
+    }
 
+    .vertical ul li a:hover {
+      color: #ff00ff;
+    }
 
-        .verticalText {
-            position: relative;
-            top: 50px;
-            width: 150px;
-            margin-top: 40px;
-        }
+    footer {
+      background-color: rgb(34, 32, 32);
+      padding: 40px 20px 20px;
+      margin-top: 40px;
+      color: white;
+    }
 
-        .vertical-desc {
-            position: relative;
-            top: 100px;
-            color: grey;
-            width: 200px;
-            font-size: 15px;
-        }
+    .footer {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      margin-bottom: 20px;
+    }
 
-        .vertical-desc1 {
-            margin-top: 35px;
-            position: relative;
-            top: 100px;
-            color: grey;
-            width: 200px;
-            font-size: 15px;
-        }
+    .footer > div {
+      margin: 15px;
+    }
 
-        .footer {
-            display: flex;
-            margin-top: 200px;
-            background-color: rgb(34, 32, 32);
-            height: 233px;
-            padding: 23px 122px;
-            justify-content: space-evenly;
-        }
+    .footer h3 {
+      margin-bottom: 10px;
+    }
 
-        .footer>div {
-            width: 223px;
-        }
+    .footer ul {
+      list-style: none;
+      padding: 0;
+    }
 
-        .footer ul li {
-            list-style: none;
-            
-        }
-        footer ul li a {
-            text-decoration: none;
-            color: aliceblue;
-        }
-        .footer-third a{
-            text-decoration: none;
-            color: azure;
-        }
-        .text-center{
-            text-align: center;
-            margin-top: -30px;
-            color: gray;
-        }
-    </style>
+    .footer ul li a {
+      text-decoration: none;
+      color: #9967a6;
+    }
+
+    .footer ul li a:hover {
+      color: #ff00ff;
+    }
+
+    .footer-third a {
+      color: #b771d2;
+    }
+
+    .footer-third a:hover {
+      color: #ff00ff;
+    }
+
+    .text-center {
+      text-align: center;
+      color: gray;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 768px) {
+      .leftsection, .rightsection {
+        width: 100%;
+        text-align: center;
+      }
+
+      .horizontalLine {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .vertical {
+        width: 90%;
+      }
+    }
+  </style>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="left">
-                My Portfolio
-            </div>
-            <div class="right">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <section class="first">
-            <div class="leftsection"> Hello, my name is <span class="purple"> Rishi Raj</span>
-                <div>and I am a passionate</div>
-                <div>computer science enthusiast</div>
-                <div>And I'm Familiar With</div>
-                <span id="element"></span>
-            </div>
-            <div class="rightsection"> <img src="developer.png" alt=""></div>
+  <header>
+    <nav>
+      <div class="left">My Portfolio</div>
+      <div class="right">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+          <li><a href="experience.html">Experience</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
 
-        </section>
-        <!-- <hr  > -->
-        <section class="second">
-            <span class="greytext"> What I have done during this Student Journey</span>
-            <br>
-            <h1>Work Experience</h1>
-            <br>
-            <div class="horizontalLine">
-                <div class="vertical">
+  <main>
+    <section class="first">
+      <div class="leftsection">
+        Hello, my name is <span class="purple">Rishi Raj</span>
+        <div>and I am a passionate</div>
+        <div>Computer Science enthusiast.</div>
+        <div>I’m familiar with</div>
+        <span id="element"></span>
+      </div>
+      <div class="rightsection">
+        <img src="developer.png" alt="Developer Illustration" />
+      </div>
+    </section>
 
-                    <div class="verticalText"> Personal Project </div>
-                    <div class="vertical-desc">
-                        <ul>
-                            <li>E-Commerce website</li>
-                            <li>spotify clone</li>
-                            <li>Netflix frontend clone</li>
+    <section class="second">
+      <span class="greytext">What I’ve achieved during my student journey</span>
+      <h1>Work Experience</h1>
+      <div class="horizontalLine">
+        <div class="vertical">
+          <div class="verticalText">Personal Projects</div>
+          <div class="vertical-desc">
+            <ul>
+              <li><strong>Ritwin Handmade Gifts Website</strong> <a href="https://ritwin.shop" target="_blank">(ritwin.shop)</a></li>
+              <li><strong>CodeMentor AI</strong> <a href="https://code-mentor-tau.vercel.app/" target="_blank">(https://code-mentor-tau.vercel.app)</a></li>
+              <li><strong>HFE Website</strong> <a href="https://hfe-sable.vercel.app/" target="_blank">(https://hfe-sable.vercel.app)</a></li>
+                <li><strong>Netflix Frontend Clone</strong> <a href="https://rishi-netflix-frontend.vercel.app/" target="_blank">(https://rishi-netflix-frontend.vercel.app)</a></li>
+              <li><strong>Spotify Clone</strong> – Audio streaming UI</li>
 
-                        </ul>
-                    </div>
-                </div>
-                <!-- <div class="vertical">
+            </ul>
+          </div>
+        </div>
 
-                    <div class="verticalText"> Internship</div>
-                    <div class="vertical-desc1">
-                        <p> Internship in Passion 3D World.</p>
-                        <p> role : Research and Development Intern </p>
-                        <p>I contributed to groundbreaking projects</p>
-                    </div>
-                </div> -->
-                <div class="vertical">
+        <div class="vertical">
+          <div class="verticalText">Internship</div>
+          <div class="vertical-desc1">
+            <p><strong>Company:</strong> TopZo (SGLG Technologies)</p>
+            <p><strong>Role:</strong> Software Developer Intern</p>
+            <p><strong>Duration:</strong> May 2024 – July 2024 (3 months)</p>
+          </div>
+        </div>
 
-                    <div class="verticalText"> Skills</div>
-                    <div class="vertical-desc">
-                        <ul>
-                            <li> Web-Development </li>
-                            <li>MERN stack</li>
-                            <li>mySQL</li>
-                            <li>DSA</li>
-                            <li> Python </li>
-                            <li>Html,Css</li>
-                            <li>C++</li>
-                            <li>Javascript</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="vertical">
+    <div class="vertical">
+  <div class="verticalText">Skills</div>
+  <div class="vertical-desc">
+    <ul>
+      <li><strong>Web Development</strong> (MERN Stack)</li>
+      <li><strong>Frontend</strong>: HTML5, CSS3, JavaScript, React.js</li>
+      <li><strong>Backend</strong>: Node.js, Express.js</li>
+      <li><strong>Database</strong>: MongoDB, SQL, MySQL</li>
+      <li>RESTful APIs & Full-stack Development</li>
+      <li>Data Structures & Algorithms (DSA)</li>
+      <li><strong>Languages</strong>: C++, Python, JavaScript</li>
+      <li><strong>Tools</strong>: Git, VS Code, Docker,JWT,Nodemailer,Razorpay</li>
+      
+      <li>CI/CD, Agile Methodologies</li>
+      <li>OpenAI/Gemini API Integration</li>
+      <li>Object-Oriented Programming (OOP)</li>
+      <li>Version Control & Deployment (Vercel/Netlify)</li>
+    </ul>
+  </div>
+</div>
 
-                    <div class="verticalText"> Academic Performance </div>
-                    <div class="vertical-desc">
-                        <p>I have performed well in all the Semesters</p>
-                        <p>Overall CGPA till Semister VI is 7.06 
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div class="footer">
-            <div class="footer-first">
-                <h3>Rishi Raj's Portfolio</h3>
-            </div>
-            <div class="footer-second">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="About.html">About</a></li>
-                    <li><a href="projects.html">Projects</a></li>
-                    <li><a href="contact.html">Contact Me</a></li>
-                </ul>
-            </div>
-            <div class="footer-third">
-                Social Media:
-                <ul>
-                    <li><i class="fab fa-github"></i> <a href="https://github.com/Rishi-raj01">GitHub</a></li>
-                    <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rishi-raj-a92416278">LinkedIn</a></li>
-                    <li><i class="far fa-envelope"></i> <a href="mailto:rishirajnvr448@gmail.com">Email</a></li>
-                </ul>
-            </div>
-            </div>
-            <div class="text-center">www.rishiportfolio.com | <i class="fas fa-copyright"></i> All rights reserved</div>
-        
-    </footer>
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script>
-        var typed = new Typed('#element', {
-            strings: ['Web-Development ','Data Structure and Analysis', 'MERN stack', 'HTML-CSS', 'javascript','mySQL','Python' ],
-            typeSpeed: 50,
-        });
-    </script>
+
+
+        <div class="vertical">
+          <div class="verticalText">Academic Performance And acheivements </div>
+          <div class="vertical-desc">
+            <p>B.Tech in Mechanical Engineering at NITK Surathkal</p>
+            <p><strong>CGPA:</strong> 7.07 </p>
+             <p>Corporate Hospitality Head at Incident Fest</p>
+              <p>President of HESC Club, NITK</p>
+              <p>Dakshana Scholar – Top 265 of 50,000+ JNV students</p>
+              <p>JNV Scholar – Top 80 from Rohtas District</p>
+          </div>
+        </div>
+<!-- 
+        <div class="vertical">
+          <div class="verticalText">Achievements</div>
+          <div class="vertical-desc">
+            <ul>
+              <li>Corporate Hospitality Head at Incident Fest</li>
+              <li>President of HESC Club, NITK</li>
+              <li>Dakshana Scholar – Top 265 of 50,000+ JNV students</li>
+              <li>JNV Scholar – Top 80 from Rohtas District</li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer">
+      <div class="footer-first">
+        <h3>Rishi Raj's Portfolio</h3>
+      </div>
+      <div class="footer-second">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="contact.html">Contact Me</a></li>
+        </ul>
+      </div>
+      <div class="footer-third">
+        <p>Social Media:</p>
+        <ul>
+          <li><i class="fab fa-github"></i> <a href="https://github.com/Rishi-raj01">GitHub</a></li>
+          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/rishi-raj-a92416278">LinkedIn</a></li>
+          <li><i class="far fa-envelope"></i> <a href="mailto:rishirajnvr448@gmail.com">Email</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="text-center">
+      www.rishiportfolio.com | <i class="fas fa-copyright"></i> All rights reserved
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+    var typed = new Typed('#element', {
+      strings: ['Web Development', 'Data Structure and Analysis', 'MERN stack', 'HTML & CSS', 'JavaScript', 'mySQL', 'Python'],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+  </script>
 </body>
-
 </html>
